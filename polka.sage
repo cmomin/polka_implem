@@ -1,4 +1,3 @@
-### TODO: generate this files per Makefile
 # Import stuff
 from polka_utils import Params, PRNG, embedding 
 from ascon import ascon_hash, ascon_encrypt, ascon_decrypt
