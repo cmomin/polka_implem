@@ -55,4 +55,21 @@ NOTE: this requires the files to have been correctly preparsed and the submodule
 
 ## Known Limitations 
 
-The randomness generation process is based on the Numpy Python package, which makes it quite difficult to use outside a Python environment. Although generating the same random values as our own is not strictly necessary in a practical deployment of POLKA, it may be desired in order to perform regression tests to verify the correct functioning of a new implementation. For this purpose, a PRNG instance using a similar seed can be used to easily generate only the random values used in an execution. These can then be stored and passed as input to the implementation being verified.  
+The randomness generation process is based on the Numpy Python package, which makes it quite difficult to use outside a Python environment. Although generating the same random values as our own is not strictly necessary in a practical deployment of POLKA, it may be desired in order to perform regression tests to verify the correct functioning of a new implementation. For this purpose, a PRNG instance using a similar seed can be used to easily generate only the random values used in an execution. These can then be stored and passed as input to the implementation being verified.
+
+This code is given as a reference code, and does not intend to be cryptographycally secure. In particular, it does not implement SPA and DPA countermesures (that would require a lower level programming langage) and does not use a secured randomness source. It is also instanciated with Ascon that does not fullfill all the requirements of an ideal AE scheme described in the paper, depsite being CIML2.
+
+## License
+
+Copyright 2023 UCLouvain
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE
