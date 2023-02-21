@@ -59,17 +59,3 @@ The randomness generation process is based on the Numpy Python package, which ma
 
 This code is given as a reference code, and does not intend to be secure against side-channel attacks. In particular, it does not implement SPA and DPA countermesures (that would require a lower level programming langage) and does not use a secured randomness source. It is also implemented with an unprotected Ascon as authenticated encryption scheme for illustration.
 
-## License
-
-Copyright 2023 UCLouvain
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE
