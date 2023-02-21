@@ -55,7 +55,7 @@ NOTE: this requires the files to have been correctly preparsed and the submodule
 
 ## Known Limitations 
 
-The randomness generation process is based on the Numpy Python package, which makes it quite difficult to use outside a Python environment. Although generating the same random values as our own is not strictly necessary in a practical deployment of POLKA, it may be desired in order to perform regression tests to verify the correct functioning of a new implementation. For this purpose, a PRNG instance using a similar seed can be used to easily generate only the random values used in an execution. These can then be stored and passed as input to the implementation being verified.
+The randomness generation process is based on the Numpy Python package, which makes it quite difficult to use outside a Python environment. Although generating the same random values as our own is not strictly necessary in a practical deployment of POLKA, it may be desired in order to perform regression tests to verify the correct functioning of a new implementation. For this purpose, a PRNG instance using a similar seed can be used to easily generate only the random values used in as single execution. These can then be stored and/or forwarded as input to the implementation being verified.
 
 This code is given as a reference code, and does not intend to be secure against side-channel attacks. In particular, it does not implement SPA and DPA countermesures (that would require a lower level programming langage) and does not use a secured randomness source. It is also implemented with an unprotected Ascon as authenticated encryption scheme for illustration.
 
